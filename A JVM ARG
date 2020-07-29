@@ -1,1 +1,5 @@
+#G1GC, 6GB RAM, with 12 core CPU
 -Xmx6G -Xms6G -XX:+UseG1GC -XX:+UseStringDeduplication -XX:+DisableExplicitGC -XX:MaxGCPauseMillis=25 -XX:SoftRefLRUPolicyMSPerMB=10000 -XX:ParallelGCThreads=12 -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:G1HeapRegionSize=32M
+
+#For Pre 1.13 Borderless Fullscreen:
+-Dorg.lwjgl.opengl.Window.undecorated=true
